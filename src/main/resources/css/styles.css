@@ -1,0 +1,41 @@
+.mainbg{
+  -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, rgba(23,25,24,1) 0%, rgba(71,80,63,1) 100%);
+}
+.newchat{
+-fx-background-color:white;
+}
+/* CSS file: styles.css */
+
+/* Style for the DatePicker text */
+.date-picker .text-field {
+    -fx-text-fill: #0000FF; /* Blue text color */
+    -fx-font-size: 14px;    /* Font size */
+    -fx-font-family: "Arial"; /* Font family */
+    -fx-background-color: #FFFFFF; /* Background color */
+    -fx-border-color: #CCCCCC; /* Border color */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-background-radius: 5px; /* Rounded corners */
+}
+
+/* Style for the DatePicker popup */
+.date-picker .combo-box-popup {
+    -fx-background-color: #F0F8FF; /* AliceBlue background */
+    -fx-border-color: #CCCCCC; /* Border color */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-background-radius: 5px; /* Rounded corners */
+}
+
+/* Style for the DatePicker cells (individual dates) */
+.date-picker .cell {
+    -fx-background-color: #F0F8FF; /* AliceBlue background */
+    -fx-text-fill: #0000FF; /* Blue text color */
+}
+
+.date-picker .cell:hover {
+    -fx-background-color: #ADD8E6; /* LightBlue background on hover */
+}
+
+.date-picker .cell:selected {
+    -fx-background-color: #87CEFA; /* LightSkyBlue background when selected */
+    -fx-text-fill: #FFFFFF; /* White text color when selected */
+}

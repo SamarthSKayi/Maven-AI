@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="611.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.firstfx.TaskController">
+    <children>
+        <AnchorPane fx:id="topAnchor" layoutX="6.0" layoutY="8.0" prefHeight="136.0" prefWidth="680.0" style="-fx-background-color: #D1C9C8;" styleClass="bottom-rounded-pane">
+            <children>
+                <Text layoutX="16.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You Have">
+                    <font>
+                        <Font size="21.0" />
+                    </font>
+                </Text>
+                <Text layoutX="16.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello, Keny">
+                    <font>
+                        <Font name="☞Gilroy-Medium" size="34.0" />
+                    </font>
+                </Text>
+                <Text fx:id="number_of_Tasks" layoutX="114.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="your-label" text="n">
+                    <font>
+                        <Font size="21.0" />
+                    </font>
+                </Text>
+                <Text layoutX="135.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="your-text" text="Tasks in this month">
+                    <font>
+                        <Font size="21.0" />
+                    </font>
+                </Text>
+                <Text fx:id="number_of_Tasks1" layoutX="625.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="your-label" text="4/5">
+                    <font>
+                        <Font name="Arial Bold" size="21.0" />
+                    </font>
+                </Text>
+                <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="634.0" layoutY="21.0" onMouseClicked="#addtask" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../assets/icons8-add-48.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <SplitPane dividerPositions="0.5925196850393701" layoutX="6.0" layoutY="153.0" prefHeight="454.0" prefWidth="680.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="403.0" prefWidth="367.0">
+                    <children>
+                        <TextFlow fx:id="report_tasks" layoutX="6.0" layoutY="7.0" prefHeight="87.0" prefWidth="353.0" style="-fx-background-color: #9A9596; -fx-background-radius: 20px;" />
+                        <ScrollPane layoutX="7.0" layoutY="103.0" prefHeight="351.0" prefWidth="360.0" style="-fx-border-radius: 20px;">
+                     <content>
+                        <VBox fx:id="taskList" prefHeight="348.0" prefWidth="357.0" />
+                     </content>
+                        </ScrollPane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="443.0" prefWidth="306.0">
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                    </cursor></AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

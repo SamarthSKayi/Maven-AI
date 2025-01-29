@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="534.0" prefWidth="643.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.example.firstfx.controller.FileController">
+    <top>
+        <MenuBar onMouseClicked="#homepage">
+            <Menu text="File">
+                <MenuItem onAction="#handleOpen" text="Open" />
+            </Menu>
+         <Menu mnemonicParsing="false" text="Back">
+            <items>
+               <MenuItem mnemonicParsing="false" onAction="#main" text="Unspecified Action" />
+            </items>
+         </Menu>
+        </MenuBar>
+    </top>
+   <center>
+      <ScrollPane prefHeight="430.0" prefWidth="616.0" BorderPane.alignment="CENTER">
+         <content>
+            <VBox fx:id="display" prefHeight="493.0" prefWidth="645.0" />
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>
